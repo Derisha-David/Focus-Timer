@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow beneath the chocolate -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#5A4A8C" />
+            <corners android:radius="18dp" />
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="3dp" />
+        </shape>
+    </item>
+    
+    <!-- Main chocolate body with rich gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#8A6FD6"
+                android:centerColor="#B69CFF"
+                android:endColor="#9F82EA"
+                android:type="linear"
+                android:angle="315" />
+            <corners android:radius="18dp" />
+        </shape>
+    </item>
+    
+    <!-- Chocolate segments - horizontal line -->
+    <item android:top="40dp" android:bottom="40dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#338A6FD6" />
+            <size android:height="1dp" />
+        </shape>
+    </item>
+    
+    <!-- Chocolate segments - vertical line -->
+    <item android:left="65dp" android:right="65dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#338A6FD6" />
+            <size android:width="1dp" />
+        </shape>
+    </item>
+    
+    <!-- Light reflection on top for glossy chocolate look -->
+    <item android:top="2dp" android:bottom="45dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#4DFFFFFF"
+                android:endColor="#00FFFFFF"
+                android:angle="90" />
+            <corners
+                android:topLeftRadius="18dp"
+                android:topRightRadius="18dp" />
+        </shape>
+    </item>
+    
+    <!-- Subtle texture overlay -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="18dp" />
+            <stroke
+                android:width="0.5dp"
+                android:color="#408A6FD6" />
+        </shape>
+    </item>
+</layer-list>

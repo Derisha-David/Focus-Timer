@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lavender Theme -->
+    <style name="AppTheme.Lavender" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/lavender_primary</item>
+        <item name="colorPrimaryDark">@color/lavender_accent</item>
+        <item name="colorAccent">@color/lavender_accent</item>
+        <item name="android:statusBarColor">@color/lavender_accent</item>
+        <item name="android:windowBackground">@color/lavender_tertiary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/lavender_text</item>
+    </style>
+    
+    <!-- Mint Green Theme -->
+    <style name="AppTheme.MintGreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/mint_primary</item>
+        <item name="colorPrimaryDark">@color/mint_accent</item>
+        <item name="colorAccent">@color/mint_accent</item>
+        <item name="android:statusBarColor">@color/mint_accent</item>
+        <item name="android:windowBackground">@color/mint_tertiary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/mint_text</item>
+    </style>
+    
+    <!-- Soft Blue Theme -->
+    <style name="AppTheme.SoftBlue" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryDark">@color/blue_accent</item>
+        <item name="colorAccent">@color/blue_accent</item>
+        <item name="android:statusBarColor">@color/blue_accent</item>
+        <item name="android:windowBackground">@color/blue_tertiary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/blue_text</item>
+    </style>
+    
+    <!-- Peach Theme -->
+    <style name="AppTheme.Peach" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/peach_primary</item>
+        <item name="colorPrimaryDark">@color/peach_accent</item>
+        <item name="colorAccent">@color/peach_accent</item>
+        <item name="android:statusBarColor">@color/peach_accent</item>
+        <item name="android:windowBackground">@color/peach_tertiary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/peach_text</item>
+    </style>
+    
+    <!-- Dark Mode Theme -->
+    <style name="AppTheme.DarkMode" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryDark">@color/dark_accent</item>
+        <item name="colorAccent">@color/dark_accent</item>
+        <item name="android:statusBarColor">@color/dark_accent</item>
+        <item name="android:windowBackground">@color/dark_tertiary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/dark_text</item>
+    </style>
+    
+    <!-- White Theme -->
+    <style name="AppTheme.White" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/white_primary</item>
+        <item name="colorPrimaryDark">@color/white_accent</item>
+        <item name="colorAccent">@color/white_accent</item>
+        <item name="android:statusBarColor">@color/white_accent</item>
+        <item name="android:windowBackground">@color/white_tertiary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/white_text</item>
+    </style>
+    
+    <!-- Default Theme (Lavender) -->
+    <style name="AppTheme" parent="AppTheme.Lavender">
+    </style>
+    
+    <!-- Custom theme for the Material TimePicker -->
+    <style name="ThemeOverlay.App.TimePicker" parent="@style/ThemeOverlay.Material3.MaterialTimePicker">
+        <item name="colorPrimary">@color/lavender_accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/lavender_accent</item>
+        <item name="colorSecondary">@color/lavender_accent</item>
+    </style>
+</resources>

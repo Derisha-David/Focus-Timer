@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?android:colorBackground">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HomeActivity">
+
+    <!-- Title and subtitle removed as requested -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/timersCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Timer Durations text removed as requested -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:baselineAligned="false">
+
+                <!-- Pomodoro Timer Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pomodoroCard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/lavender_secondary"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/pomodoroTimeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="25"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#F5F5F5"
+                            android:textAllCaps="true"
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="24sp"
+                            android:autoSizeMaxTextSize="48sp"
+                            android:autoSizeStepGranularity="2sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pomodoro"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#FFFFFF"
+                            android:textAllCaps="false"
+                            android:maxLines="1"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeMaxTextSize="14sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:ellipsize="end" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Short Break Timer Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/shortBreakCard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/lavender_secondary"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/shortBreakTimeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="5"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#F5F5F5"
+                            android:textAllCaps="true"
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="24sp"
+                            android:autoSizeMaxTextSize="48sp"
+                            android:autoSizeStepGranularity="2sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/short_break"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#FFFFFF"
+                            android:textAllCaps="false"
+                            android:maxLines="1"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeMaxTextSize="14sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:ellipsize="end" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Long Break Timer Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/longBreakCard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/lavender_secondary"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/longBreakTimeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="15"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#F5F5F5"
+                            android:textAllCaps="true"
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="24sp"
+                            android:autoSizeMaxTextSize="48sp"
+                            android:autoSizeStepGranularity="2sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/long_break"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#FFFFFF"
+                            android:textAllCaps="false"
+                            android:maxLines="1"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeMaxTextSize="14sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:ellipsize="end" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/themeCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="24dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="?attr/colorPrimary"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/timersCardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/themeSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_preferences"
+                android:tint="?android:attr/textColorPrimary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="Theme Settings"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_more"
+                android:tint="?android:attr/textColorPrimary" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+<Button
+    android:id="@+id/startButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="24dp"
+    android:backgroundTint="?attr/colorAccent"
+    android:padding="16dp"
+    android:text="@string/focus"
+    android:textColor="?android:attr/textColorPrimaryInverse"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/themeCardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

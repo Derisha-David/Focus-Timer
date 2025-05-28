@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pomodoro</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="pomodoro">Pomodoro</string>
+    <string name="short_break">Short break</string>
+    <string name="long_break">Long break</string>
+    <string name="timer_default">25:00</string>
+    
+    <!-- Home Activity strings -->
+    <string name="app_subtitle">Customize your timer durations</string>
+    <string name="pomodoro_duration">Pomodoro Duration (minutes)</string>
+    <string name="short_break_duration">Short Break Duration (minutes)</string>
+    <string name="long_break_duration">Long Break Duration (minutes)</string>
+    <string name="start_pomodoro">FOCUS</string>
+    <string name="focus">FOCUS</string>
+</resources>

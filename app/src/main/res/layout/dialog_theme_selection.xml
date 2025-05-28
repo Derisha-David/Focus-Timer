@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Theme"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- Lavender Theme Button -->
+    <LinearLayout
+        android:id="@+id/lavenderThemeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical">
+        
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@color/lavender_primary" />
+            
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="Lavender"
+            android:textSize="16sp" />
+            
+        <RadioButton
+            android:id="@+id/lavenderRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+    </LinearLayout>
+    
+    <!-- Mint Green Theme Button -->
+    <LinearLayout
+        android:id="@+id/mintThemeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical">
+        
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@color/mint_primary" />
+            
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="Mint Green"
+            android:textSize="16sp" />
+            
+        <RadioButton
+            android:id="@+id/mintRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+    </LinearLayout>
+    
+    <!-- Blue Theme Button -->
+    <LinearLayout
+        android:id="@+id/blueThemeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical">
+        
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@color/blue_primary" />
+            
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="Soft Blue"
+            android:textSize="16sp" />
+            
+        <RadioButton
+            android:id="@+id/blueRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+    </LinearLayout>
+    
+    <!-- Peach Theme Button -->
+    <LinearLayout
+        android:id="@+id/peachThemeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical">
+        
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@color/peach_primary" />
+            
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="Peach"
+            android:textSize="16sp" />
+            
+        <RadioButton
+            android:id="@+id/peachRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+    </LinearLayout>
+    
+    <!-- Dark Mode Theme Button -->
+    <LinearLayout
+        android:id="@+id/darkThemeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical">
+        
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@color/dark_primary" />
+            
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="Dark Mode"
+            android:textSize="16sp" />
+            
+        <RadioButton
+            android:id="@+id/darkRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?attr/colorAccent"/>
+</LinearLayout>

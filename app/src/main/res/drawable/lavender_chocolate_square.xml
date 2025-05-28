@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bottom shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#5A4A8C" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    
+    <!-- Main chocolate body - slightly smaller to create shadow effect -->
+    <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <!-- Lavender chocolate color -->
+            <solid android:color="#9F82EA" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    
+    <!-- Glossy top surface with gradient -->
+    <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="20dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#B69CFF"
+                android:endColor="#9F82EA"
+                android:angle="270" />
+            <corners 
+                android:topLeftRadius="8dp" 
+                android:topRightRadius="8dp" />
+        </shape>
+    </item>
+    
+    <!-- Highlight on the top edge -->
+    <item android:left="4dp" android:top="2dp" android:right="4dp" android:bottom="35dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#40FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:angle="270" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    
+    <!-- Side edge highlight -->
+    <item android:left="1dp" android:top="15dp" android:right="25dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#20FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:angle="0" />
+            <corners 
+                android:bottomLeftRadius="8dp" />
+        </shape>
+    </item>
+</layer-list>
